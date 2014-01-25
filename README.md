@@ -17,6 +17,15 @@ Configure the settings.py like this:
 INSTALLED_APPS = (... 'django_fbplugins' ...)
 ```
 
+Include it
+----------
+Include the tag library in a template:
+```html
+{% load fbplugins %}
+```
+
+And then...
+
 Use it
 ------
 As a like button:
@@ -35,3 +44,7 @@ You can use various options like this:
 ```html
 {% fb_like_box_html href="https://www.facebook.com/FacebookDevelopers"  colorscheme="dark" showborder="false" header="false" %}
 ```
+
+Philosophy
+----------
+This application is written keeping in mind the KISS motto: Keep it simple stupid!
