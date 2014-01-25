@@ -12,9 +12,9 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-      name='django-fbplugins',
+      name='django-facebook-social-plugins',
       version='0.1',
-      packages=['fbplugins'],
+      packages=['django_fbplugins'],
       include_package_data=True,
       license='MIT License',
       description='Django wrapper tags on facebook social plugins.',
