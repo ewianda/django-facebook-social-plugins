@@ -26,11 +26,11 @@ def fb_like_btn(href, **kwargs):
         
         Usage::
         
-            {% fb_like_btn_html href="<page-url>" %}
+            {% fb_like_btn_html "<page-url>" %}
         
         Example::
         
-            {% fb_like_btn_html href="https://www.facebook.com/FacebookDevelopers" %}
+            {% fb_like_btn_html "https://www.facebook.com/FacebookDevelopers" %}
     
     """
     
@@ -60,11 +60,11 @@ def fb_like_box(href, **kwargs):
         
         Usage::
         
-            {% fb_like_box_html href="<page-url>" %}
+            {% fb_like_box_html "<page-url>" %}
             
         Example::
         
-            {% fb_like_box_html href="https://www.facebook.com/FacebookDevelopers" %}
+            {% fb_like_box_html "https://www.facebook.com/FacebookDevelopers" %}
             
     """
     
