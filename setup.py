@@ -21,7 +21,7 @@ setup(
       long_description=README,
       url='https://github.com/marcopompili/django-facebook-social-plugins',
       author='Marco Pompili',
-      author_email='marcs@emarcs.org',
+      author_email='django@emarcs.org',
       classifiers=[
             'Environment :: Web Environment',
             'Framework :: Django',
