@@ -84,3 +84,14 @@ def fb_like_box(href, **kwargs):
 
 register.inclusion_tag('django_fbplugins/box/iframe.html', name='fb_like_box_iframe')(fb_like_box)
 register.inclusion_tag('django_fbplugins/box/html5.html', name='fb_like_box_html')(fb_like_box)
+
+
+@register.inclusion_tag('django_fbplugins/box/feed.html')
+def fb_feed_box(href, **kwargs):
+    return {
+        'lang': langs[get_language()],
+        'href': href,
+        'action': kwargs.get('action', 'likes, recommends'),
+        'colorscheme': kwargs.get('colorscheme', 'light'),
+        'header': kwargs.get('header', 'true')
+    }
