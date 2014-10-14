@@ -12,16 +12,16 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-facebook-social-plugins',
+    name=str('django-facebook-social-plugins'),
     version='0.1',
-    packages=['django_fbplugins'],
+    packages=['django_fbplugins', 'django_fbplugins.templatetags'],
     include_package_data=True,
-    license='MIT License',
-    description='Django wrapper tags on facebook social plugins.',
+    license=str('MIT License'),
+    description=str('Django wrapper tags on facebook social plugins.'),
     long_description=README,
-    url='https://github.com/marcopompili/django-facebook-social-plugins',
-    author='Marco Pompili',
-    author_email='django@emarcs.org',
+    url=str('https://github.com/marcopompili/django-facebook-social-plugins'),
+    author=str('Marco Pompili'),
+    author_email=str('django@emarcs.org'),
     install_requires = ['django'],
     classifiers=[
         'Environment :: Web Environment',
